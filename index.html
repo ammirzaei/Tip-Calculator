@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="tip">
+        <h1 class="tip-title">Tip Calculator</h1>
+        <div class="tip-body">
+          <div class="tip-group">
+            <p>How much was your bill?</p>
+            <input type="number" class="input" placeholder="bill amount" id="bill"/>
+            <span class="prefix">$</span>
+          </div>
+          <div class="tip-group">
+            <p>How was your service?</p>
+            <input type="number" class="input" placeholder="service amount" id="service"/>
+            <span class="prefix">%</span>
+          </div>
+          <div class="tip-group">
+              <p>How many people are sharing the bill?</p>
+              <input type="number" class="input" placeholder="number of people" id="people" />
+          </div>
+          <div class="tip-group">
+              <button class="btn-calculate" id="calculate">Calculate</button>
+          </div>
+          <div class="tip-group">
+              <pre id="result" class="tip-result"></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
